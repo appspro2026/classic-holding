@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Classic Holding — Бизнес-решения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="assets/logo.svg" alt="Classic Holding">
+        <span>Classic Holding</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#team">Команда</a></li>
+          <li><a href="#contacts" class="cta">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="fade-in">Классические ценности. Современные решения.</h1>
+          <p class="fade-in">Мы помогаем бизнесам расти через стратегию, финансы и операционную экспертизу.</p>
+          <div class="hero-actions">
+            <a href="#contacts" class="btn btn-primary">Связаться</a>
+            <a href="#services" class="btn btn-ghost">Наши услуги</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="card-inner">
+            <div class="stats">
+              <div>
+                <h3 class="stat-number" data-target="120">0</h3>
+                <p>Проекта</p>
+              </div>
+              <div>
+                <h3 class="stat-number" data-target="45">0</h3>
+                <p>Клиентов</p>
+              </div>
+              <div>
+                <h3 class="stat-number" data-target="10">0</h3>
+                <p>Лет опыта</p>
+              </div>
+            </div>
+            <div class="card-visual"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+  <h2 class="section-title fade-in">Наши услуги</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Стратегия роста</h3>
+            <p>Анализ рынка, позиционирование и дорожные карты развития.</p>
+            <a href="#contacts" class="link-arrow">Заказать</a>
+          </article>
+          <article class="service-card">
+            <h3>Финансовый аудит</h3>
+            <p>Оптимизация затрат, прогнозирование и повышение эффективности капитала.</p>
+            <a href="#contacts" class="link-arrow">Подробнее</a>
+          </article>
+          <article class="service-card">
+            <h3>Операционная трансформация</h3>
+            <p>Автоматизация процессов и улучшение операционной эффективности.</p>
+            <a href="#contacts" class="link-arrow">Узнать больше</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2 class="fade-in">О нас</h2>
+          <p class="fade-in">Classic Holding — консалтинговая компания, объединяющая экспертизу в стратегии и финансах с практическим опытом внедрения.</p>
+          <ul class="about-list">
+            <li>Индивидуальные решения под клиента</li>
+            <li>Прозрачное ценообразование</li>
+            <li>Реальные улучшения бизнеса</li>
+          </ul>
+        </div>
+        <div class="about-quote">
+          <blockquote>«Мы верим в простые решения сложных задач»</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="container">
+  <h2 class="section-title fade-in">Наша команда</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="avatar" style="background-image:url('https://via.placeholder.com/300')"></div>
+            <h4>Иван Петров</h4>
+            <p>Генеральный директор</p>
+          </div>
+          <div class="team-member">
+            <div class="avatar" style="background-image:url('https://via.placeholder.com/300')"></div>
+            <h4>Мария Смирнова</h4>
+            <p>Директор по стратегиям</p>
+          </div>
+          <div class="team-member">
+            <div class="avatar" style="background-image:url('https://via.placeholder.com/300')"></div>
+            <h4>Алексей Кузьмин</h4>
+            <p>Финансовый директор</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container contacts-grid">
+        <div>
+          <h2>Свяжитесь с нами</h2>
+          <p>Оставьте заявку, и мы подготовим план действий для вашего бизнеса.</p>
+          <ul class="contact-list">
+            <li>email: hello@classic-holding.ru</li>
+            <li>тел: +7 (495) 000-00-00</li>
+            <li>адрес: Москва, ул. Примерная, 1</li>
+          </ul>
+        </div>
+        <form class="contact-form" onsubmit="return false;" id="contactForm">
+          <label><input type="text" placeholder="Ваше имя" required></label>
+          <label><input type="email" placeholder="Email" required></label>
+          <label><textarea placeholder="Сообщение" required></textarea></label>
+          <button class="btn btn-primary" id="sendBtn">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Classic Holding, 2025</p>
+      <nav>
+        <a href="#privacy">Политика</a>
+        <a href="#terms">Условия</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
